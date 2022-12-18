@@ -1,0 +1,95 @@
+
+<!DOCTYPE HTML>
+<html lang="es">
+
+<!-- Datos que describen el documento -->
+<head>
+    <meta charset="UTF-8" />
+    <title>Base de datos de películas</title>
+    <meta name="author" content="Adriana Rodríguez Flórez, UO282798" />
+    <meta name="description" content="Gestión de una base de datos con MySQL (temática libre: CINE) --- BUSCAR " />
+    <meta name="keywords" content="mysql,sql,base,datos,bd,gestion,servidor,cine" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    
+ <!-- Incluir el código PHP que especifica la BD -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Base de datos de CINE</h1>
+        <h2>Películas, actores, directores y más</h2>
+    </header>
+    
+    <fieldset>
+            <legend>Gestión de la BD</legend>
+            <nav>
+            <a title="Inicio"
+                    tabindex="1"
+                    accesskey="h"
+                    href="index.html">
+                Inicio | </a>
+
+            <a title="Loguear película"
+                    tabindex="2"
+                    accesskey="i"
+                    href="log.html">
+                Loguear películas | </a>
+
+            <a title="Mostrar información extensa sobre una película concreta"
+                    tabindex="4"
+                    accesskey="b"
+                    href="buscar.html">
+                Buscar películas por nombre / </a>
+
+            <a title="Buscar películas dirigidas por un director"
+                    tabindex="5"
+                    accesskey="d"
+                    href="director.html">
+                por director | </a>
+
+            <a title="Eliminar películas"
+                    tabindex="6"
+                    accesskey="e"
+                    href="borrar.html">
+                Eliminar películas | </a>
+
+            <a title="Insertar datos cinematográficos en la tabla"
+                    tabindex="7"
+                    accesskey="i"
+                    href="insertar.html">
+                Añadir datos cinematográficos </a>
+
+            </nav>
+        </fieldset>
+
+    <form method="post" action="#" >
+        <fieldset>
+            <h3>Mostrar la información de...</h3>
+
+            <label for="nombreBuscar">* Nombre de la película: </label>  
+                <select id="nombreBuscar" name="nombreBuscar">
+                    <option value="---">---</option>
+                    <option value='Eyes Wide Shut'>Eyes Wide Shut</option><option value='Jurassic Park'>Jurassic Park</option><option value='Se7en'>Se7en</option>                </select>
+
+                <input type="submit" name="buscar" value="Buscar" />
+        </fieldset>
+
+        <section>
+        <h4>Resultado de la búsqueda: </h4>
+            <h4> Jurassic Park </h4><ul><li> Género: Aventura</li><li> Año de estreno: 1993</li><li> Duración: 121' </li></ul><h5> Valoración personal </h5><ul><li> Puntuación: 4/5 </li><li> Opinión: Un clásico</li></ul><h5> Cast & crew </h5><h6> Director/a </h6><ul><li> Nombre: Steven Spielberg</li><li> Fecha de nacimiento: 1946-12-18</li><li> Lugar de nacimiento: Ohio, EEUU</li><li> Corriente cinematográfica: Siglo XX/XXI: aventura, sci-fi</li></ul><h6> Actor protagonista </h6><ul><li> Nombre artístico: Sam Neill</li><li> Nombre real: Nigel John Dermot /Sam/ Neill</li><li> Fecha de nacimiento: 1947-09-14</li><li> Fecha de nacimiento: Irlanda del Norte</li></ul><h6> Producida por: </h6><ul><li> Compañía cinematográfica: Universal Pictures</li><li> Sede: Los Angeles, California, EEUU</li><li> Fecha de fundación: 1912</li></ul><h5> Galardonada con: </h5><p> Oscar a Mejores efectos especiales</p>        </section>
+    </form>
+
+
+    <footer>
+        <p>Software y Estándares para la Web</p>
+        <p>Grado en Ingeniería Informática del Software (Universidad de Oviedo)</p>
+        <address>
+            <p>Contacto: 
+            <a href="mailto:UO282798@uniovi.es">Adriana Rodríguez Flórez (UO282798@uniovi.es)</a></p>
+        </address>
+    </footer>
+</body>
+
+</html>
